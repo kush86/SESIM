@@ -1,0 +1,26 @@
+ <div class="form-group">
+                    <label class="col-md-3 control-label">
+                        <fmt:message key="campaign.codeverify.create.page.form.uploaddata.label"/>
+                    </label>
+
+                    <div class="col-md-9">
+                        <div class="input-group">
+                            <input type="file" id="exampleFile1" name="exampleFile1" style="display: none">
+                            <input type="text" class="form-control" id="exampleFakeFile1" readonly>
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="exampleFakeBrowseFile1">Browse...</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+
+//////////////////
+
+                  $('#exampleFakeBrowseFile1, #exampleFakeFile1').on('click', function () {
+                      $('#exampleFile1').trigger("click");
+                  });
+                  $('#exampleFile1').change(function () {
+                      var file_name = this.value.replace(/\\/g, '/').replace(/.*\//, '');
+                      $('#exampleFakeFile1').val(file_name);
+                  });

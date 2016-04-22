@@ -1,0 +1,115 @@
+/*
+ *  (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
+ *  All Rights Reserved.
+ * <p/>
+ * These materials are unpublished, proprietary, confidential source code of
+ * hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
+ * of hSenid Mobile Solutions (Pvt) Limited.
+ * <p/>
+ * hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
+ * property rights in these materials.
+ *
+ */
+
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #464647;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+
+
+.home-image{
+    float:left;
+    width:30%;
+}
+
+login-box{
+    float:right;
+    width:50%;
+
+}
+
+.textbox-login {
+    margin: 0px;
+    height: 38px;
+    width: 75%;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 15px;
+    border-color: #AEB7BF;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+}
+
+.button-login{
+    text-align: center;
+    border-radius: 3px;
+    background-position: top;
+    background-color: #9BBC2C;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    cursor: pointer;
+    border-color: orange;
+    border-width: 0px;
+    border-style: solid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    margin-top: 20px;
+}
+
+.white-main{
+	width: 96%;
+	float: left;
+	background-color: #FFF;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	margin-top: 2%;
+	border: 1px solid #d7d7d7;
+	font-size: 0.8em;
+	color: #282828;
+
+}
+
+
+.textbox2 {
+	margin: 0px;
+	height: 18px;
+	width: 95%;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	border-color: #AEB7BF;
+	border-style: solid;
+	border-width: 1px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3A3D47;
+}
+
+
+
+
+

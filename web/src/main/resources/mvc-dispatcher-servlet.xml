@@ -1,0 +1,114 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+        http://www.springframework.org/schema/tx
+         http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+    <context:component-scan base-package="hms.spm, ucsc.mis"/>
+    <mvc:annotation-driven conversion-service="conversionService"/>
+    <context:property-placeholder location="classpath:system.properties" ignore-resource-not-found="true"
+                                  ignore-unresolvable="true"/>
+
+    <!--Common beans-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--Hibernate configurations-->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="${mysql.connection.driver.class}"/>
+        <property name="jdbcUrl" value="${mysql.connection.url}"/>
+        <property name="user" value="${mysql.connection.username}"/>
+        <property name="password" value="${mysql.connection.password}"/>
+        <!--C3P0 properties-->
+        <property name="acquireIncrement" value="${c3p0.acquire.increment}"/>
+        <property name="idleConnectionTestPeriod" value="${c3p0.max.idle.time}"/>
+        <property name="maxPoolSize" value="${c3p0.max.pool.size}"/>
+        <property name="minPoolSize" value="${c3p0.min.pool.size}"/>
+    </bean>
+
+    <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="packagesToScan" value="hms.spm, ucsc.mis"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5InnoDBDialect</prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.hbm2ddl.auto">update</prop>
+                <prop key="hibernate.connection.pool_size">5</prop>
+                <prop key="hibernate.c3p0.max_size">10</prop>
+                <prop key="hibernate.c3p0.min_size">5</prop>
+                <prop key="hibernate.c3p0.idle_test_period">60</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Transaction Manager -->
+    <bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+
+    <bean id="conversionService"
+          class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="hms.spm.converter.StringToPermissionConverter"/>
+                <bean class="hms.spm.converter.StringToDateConverter"/>
+                <bean class="hms.spm.converter.StringToTemplateConverter"/>
+            </set>
+        </property>
+    </bean>
+
+    <!--both JavaMail MimeMessages and Spring SimpleMailMessages-->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" value="smtp.gmail.com"/>
+        <property name="port" value="587"/>
+        <property name="username" value="akn.rajakaruna"/>
+        <property name="password" value="akn@24220"/>
+
+        <!-- The name of the property, following JavaBean naming conventions -->
+        <property name="javaMailProperties">
+            <props>
+                <prop key="mail.transport.protocol">smtp</prop>
+                <prop key="mail.smtp.auth">true</prop>
+                <prop key="mail.smtp.starttls.enable">true</prop>
+                <prop key="mail.debug">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="50000000"/>
+    </bean>
+
+    <bean id="velocityEngine" class="org.springframework.ui.velocity.VelocityEngineFactoryBean">
+        <property name="velocityProperties">
+            <props>
+                <prop key="resource.loader">class</prop>
+                <prop key="class.resource.loader.class">
+                    org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader
+                </prop>
+            </props>
+        </property>
+    </bean>
+
+    <bean id="gmcConnector" class="ucsc.mis.util.GmcConnector">
+        <property name="mtForwardUrl" value="${modem.connector.mtForwardUrl}"/>
+        <property name="modemId" value="${modem.connector.id}"/>
+    </bean>
+
+
+    <mvc:resources mapping="/fonts/**" location="/fonts"/>
+    <mvc:resources mapping="/images/**" location="/images"/>
+
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+</beans>
