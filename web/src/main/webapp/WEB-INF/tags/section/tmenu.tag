@@ -9,21 +9,7 @@
         <security:authorize access="hasAnyRole('ROLE_VIEW_USERS', 'ROLE_EDIT_USERS')">
 
             <li>
-                    <%--<a href="#">--%>
                 <a href="${pageContext.request.contextPath}/users-manager/">Users</a>
-                    <%--<i class="glyphicon glyphicon-list"></i> --%>
-                    <%--Users--%>
-                    <%--<span class="caret pull-right"></span>--%>
-                    <%--</a>--%>
-                <!-- Sub menu -->
-                    <%--<ul>--%>
-                    <%--<li>--%>
-                    <%--<a href="${pageContext.request.contextPath}/users-manager/">User Accounts</a>--%>
-                    <%--</li>--%>
-                    <%--<li>--%>
-                    <%--<a href="${pageContext.request.contextPath}/users-manager/categories">User Types</a>--%>
-                    <%--</li>--%>
-                    <%--</ul>--%>
             </li>
         </security:authorize>
 
@@ -44,12 +30,6 @@
         </security:authorize>
 
         <security:authorize access="hasAnyRole('ROLE_VIEW_CAMPAIGNS', 'ROLE_EDIT_CAMPAIGNS')">
-            <%--<li>--%>
-            <%--<a href="${pageContext.request.contextPath}/se-controller/campaigns">--%>
-            <%--Campaigns--%>
-            <%--</a>--%>
-            <%--</li>--%>
-
             <li class="submenu">
                 <a href="#">
                     Campaigns

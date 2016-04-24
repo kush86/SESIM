@@ -1,16 +1,3 @@
-<%--
-  ~  (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
-  ~  All Rights Reserved.
-  ~ <p/>
-  ~ These materials are unpublished, proprietary, confidential source code of
-  ~ hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
-  ~ of hSenid Mobile Solutions (Pvt) Limited.
-  ~ <p/>
-  ~ hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
-  ~ property rights in these materials.
-  ~
-  --%>
-
 <%@ tag description="Header tag" pageEncoding="UTF-8" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ taglib prefix="security" uri="http://www.springframework.org/security/tags" %>
@@ -29,19 +16,13 @@
 
         <div class="container-fluid">
 
-            <%--<div class="navbar-header ">--%>
-                <%--<a href="<c:url value="/home"/>"> <img src="<c:url value="/images/hms-symbol.png"/>" id="logo" class="logo" alt="Logo"--%>
-                                                       <%--width="50px" height="50px" style="margin-right: 15%">--%>
-                <%--</a>--%>
-            <%--</div>--%>
-
             <div class="navbar-header">
                 <a class="navbar-brand" href="<c:url value="/home"/>">SE Simulator</a>
             </div>
 
             <div>
-
-                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" style="margin-right: 50px" role="navigation">
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" style="margin-right: 50px"
+                     role="navigation">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">${username}<b
@@ -54,12 +35,12 @@
                                     Profile
                                 </a></li>
                                 <%--<li>--%>
-                                    <%--<a href="<c:url value="/users-manager/changePasswordModal"/>"--%>
-                                       <%--data-toggle='modal'--%>
-                                       <%--data-target='.password-Modal'>--%>
-                                        <%--<i class="glyphicon glyphicon-lock"></i>--%>
-                                        <%--Change Password--%>
-                                    <%--</a>--%>
+                                <%--<a href="<c:url value="/users-manager/changePasswordModal"/>"--%>
+                                <%--data-toggle='modal'--%>
+                                <%--data-target='.password-Modal'>--%>
+                                <%--<i class="glyphicon glyphicon-lock"></i>--%>
+                                <%--Change Password--%>
+                                <%--</a>--%>
                                 <%--</li>--%>
                                 <li>
                                     <a href="<c:url value="/j_spring_security_logout"/>">
