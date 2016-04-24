@@ -52,7 +52,6 @@
 
             <li class="submenu">
                 <a href="#">
-                    <i class="glyphicon glyphicon-list"></i>
                     Campaigns
                     <span class="caret pull-right"></span>
                 </a>

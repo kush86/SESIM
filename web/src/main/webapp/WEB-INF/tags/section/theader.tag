@@ -22,56 +22,63 @@
        value="<%=((UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal()).getUsername()%>"/>
 
 <div class="header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Logo -->
-                <div class="logo">
-                    <h1><a href="<c:url value="/home"></c:url> ">SE Simulator</a></h1>
-                </div>
+    <button type="button" style="color: #ffffff;z-index: 1031" class="navbar-toggle" data-toggle="collapse"
+            data-target=".navbar-collapse"><span class="glyphicon glyphicon-user"></span></button>
+
+    <div class="navbar-collapse collapse navbar-fixed-top navbar-inverse">
+
+        <div class="container-fluid">
+
+            <%--<div class="navbar-header ">--%>
+                <%--<a href="<c:url value="/home"/>"> <img src="<c:url value="/images/hms-symbol.png"/>" id="logo" class="logo" alt="Logo"--%>
+                                                       <%--width="50px" height="50px" style="margin-right: 15%">--%>
+                <%--</a>--%>
+            <%--</div>--%>
+
+            <div class="navbar-header">
+                <a class="navbar-brand" href="<c:url value="/home"/>">SE Simulator</a>
             </div>
 
-            <div class="col-md-6">
-                <div class="navbar navbar-inverse" role="banner">
-                    <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">${username}<b
-                                        class="caret"></b></a>
-                                <ul class="dropdown-menu animated fadeInUp">
-                                    <li><a href="<c:url value="/users-manager/profile"/>"
-                                           data-toggle='modal'
-                                           data-target='.profile-Modal'>
-                                        <span class="glyphicon glyphicon-user"></span>
-                                        Profile
-                                    </a></li>
-                                    <%--<li>--%>
-                                        <%--<a data-user-id="${user.id}"--%>
-                                           <%--data-toggle='modal'--%>
-                                           <%--data-target='#changeUserPasswordModal'--%>
-                                           <%--data-tooltip="true" title="Change password">--%>
-                                            <%--<i class="glyphicon glyphicon-lock"></i>--%>
-                                            <%--Change Password--%>
-                                        <%--</a>--%>
-                                    <%--</li>--%>
-                                    <li>
-                                        <a href="<c:url value="/j_spring_security_logout"/>">
-                                            <span class="glyphicon glyphicon-off"></span>
-                                            Logout
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
+            <div>
 
-                       </ul>
-                    </nav>
-                </div>
+                <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" style="margin-right: 50px" role="navigation">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">${username}<b
+                                    class="caret"></b></a>
+                            <ul class="dropdown-menu animated fadeInUp">
+                                <li><a href="<c:url value="/users-manager/profile"/>"
+                                       data-toggle='modal'
+                                       data-target='.profile-Modal'>
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Profile
+                                </a></li>
+                                <%--<li>--%>
+                                    <%--<a href="<c:url value="/users-manager/changePasswordModal"/>"--%>
+                                       <%--data-toggle='modal'--%>
+                                       <%--data-target='.password-Modal'>--%>
+                                        <%--<i class="glyphicon glyphicon-lock"></i>--%>
+                                        <%--Change Password--%>
+                                    <%--</a>--%>
+                                <%--</li>--%>
+                                <li>
+                                    <a href="<c:url value="/j_spring_security_logout"/>">
+                                        <span class="glyphicon glyphicon-off"></span>
+                                        Logout
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
             </div>
         </div>
+
     </div>
 </div>
 
-<div class="modal fade profile-Modal" tabindex="-1" role="dialog" aria-labelledby="viewUserProfileModal">
+<div class="modal fade profile-Modal modal-detail" tabindex="-1" role="dialog" aria-labelledby="viewUserProfileModal">
     <div class="modal-dialog">
         <div class="modal-content">
         </div>

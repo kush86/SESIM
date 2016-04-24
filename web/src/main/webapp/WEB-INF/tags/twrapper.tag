@@ -1,16 +1,3 @@
-<%--
-  ~  (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
-  ~  All Rights Reserved.
-  ~ <p/>
-  ~ These materials are unpublished, proprietary, confidential source code of
-  ~ hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
-  ~ of hSenid Mobile Solutions (Pvt) Limited.
-  ~ <p/>
-  ~ hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
-  ~ property rights in these materials.
-  ~
-  --%>
-
 <%@ tag description="Wrapper tag to use in pages after login" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
@@ -39,11 +26,15 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="<c:url value="/css/bootstrap.min.css" />" rel="stylesheet">
-    <link href="<c:url value="/css/styles.css" />" rel="stylesheet">
+
+    <!-- Theme fonts CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
     <script src="<c:url value="/js/jquery.min.js" />"></script>
     <script src="<c:url value="/js/bootstrap.min.js" />"></script>
     <script src="<c:url value="/js/common.js" />"></script>
+    <script src="<c:url value="/js/jquery.form.js" />"></script>
+    <script src="<c:url value="/js/main.js"/>"></script>
 
     <%-- validation styles--%>
 
@@ -68,6 +59,10 @@
     <!-- for css file includes -->
     <jsp:invoke fragment="css_file_includes"/>
 
+    <!-- Theme customizations -->
+    <link href="<c:url value="/css/styles.css" />" rel="stylesheet">
+    <link href="<c:url value="/css/hmsThemeCustomization.css" />" rel="stylesheet">
+
     <!-- for style tags -->
     <jsp:invoke fragment="css_inline"/>
 
@@ -75,26 +70,26 @@
 
 </head>
 <body>
+<div id="wrap">
+    <t:theader/>
+    <div id="main" class="page-content">
+        <div class="row">
+            <div id="menu" class="col-md-2">
+                <t:tmenu/>
+            </div>
 
-<t:theader/>
-
-<div class="page-content">
-    <div class="row">
-        <div class="col-md-2">
-            <t:tmenu/>
-        </div>
-
-        <div class="col-md-10">
-            <div class="row">
-                <%--Content title--%>
-                <div class="col-md-12">
-                    <div class="content-box-large">
-                        <div class="panel-body">
-                            <%--<h5>--%>
-                            <jsp:invoke fragment="page_heading"/>
-                            <%--</h5>--%>
-                            <!-- Body content-->
-                            <jsp:invoke fragment="page_body"/>
+            <div id="content" class="col-md-10">
+                <div class="row">
+                    <%--Content title--%>
+                    <div id="content-inner" class="col-md-12">
+                        <div class="content-box-large">
+                            <div class="panel-body">
+                                <%--<h5>--%>
+                                <jsp:invoke fragment="page_heading"/>
+                                <%--</h5>--%>
+                                <!-- Body content-->
+                                <jsp:invoke fragment="page_body"/>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -102,12 +97,17 @@
         </div>
     </div>
 </div>
-
+<div class="loading" style="display: none">
+    <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+    </div>
+</div>
 <!-- can used to include things like modals, etc -->
 <jsp:invoke fragment="after_page_body"/>
 
 <!-- footer of the page -->
-<tt:footer/>
+<t:footer/>
 
 <!-- for js file includes -->
 <jsp:invoke fragment="js_file_includes"/>
