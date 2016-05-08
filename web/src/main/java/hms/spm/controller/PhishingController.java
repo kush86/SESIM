@@ -179,7 +179,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping("/phished")
     public String phished(ModelMap modelMap) {
-        return "email/phished";
+        return "email/notify";
     }
 
 
