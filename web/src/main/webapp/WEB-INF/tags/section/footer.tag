@@ -6,7 +6,7 @@
     <%--<div class="footer-right">--%>
         <%--<p>--%>
         <%--<fmt:detailedError key="footer.copyright"/>--%>
-            <%--<a href="http://www.hsenidmobile.com/">--%>
+            <%--<a href=#>--%>
                 <%--<fmt:detailedError key="footer.navigation"/>--%>
             <%--</a>--%>
             <%--<fmt:detailedError key="footer.all.right.reserved"/>--%>

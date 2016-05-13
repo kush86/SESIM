@@ -1,16 +1,3 @@
-/*
- *  (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
- *  All Rights Reserved.
- * <p/>
- * These materials are unpublished, proprietary, confidential source code of
- * hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
- * of hSenid Mobile Solutions (Pvt) Limited.
- * <p/>
- * hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
- * property rights in these materials.
- *
- */
-
 package hms.spm.core.service.impl;
 
 import hms.spm.core.service.CampaignManagementException;
@@ -24,12 +11,6 @@ import ucsc.mis.orm.model.EmailCampaign;
 import ucsc.mis.service.EmailService;
 
 import java.util.List;
-
-
-/**
- * @author Sadupa Wijeratne
- * @since 9/7/15 4:01 PM
- */
 
 @Service("campaignService")
 @Transactional

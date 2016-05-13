@@ -9,20 +9,6 @@ import javax.persistence.Table;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
- * All Rights Reserved.
- * <p/>
- * These materials are unpublished, proprietary, confidential source code of
- * hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
- * of hSenid Mobile Solutions (Pvt) Limited.
- * <p/>
- * hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
- * property rights in these materials.
- *
- * @author Sadupa Wijeratne
- * @since 9/10/15 9:22 AM
- */
 @Entity
 @Table(name = "mt_message")
 public class MtMessage implements Serializable {

@@ -10,20 +10,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-/**
- * (C) Copyright 2015 hSenid Mobile Solutions (Pvt) Limited.
- * All Rights Reserved.
- * <p/>
- * These materials are unpublished, proprietary, confidential source code of
- * hSenid Mobile Solutions (Pvt) Limited and constitute a TRADE SECRET
- * of hSenid Mobile Solutions (Pvt) Limited.
- * <p/>
- * hSenid Mobile Solutions (Pvt) Limited retains all title to and intellectual
- * property rights in these materials.
- *
- * @author Sadupa Wijeratne
- * @since 9/4/15 5:11 PM
- */
 @Entity
 @Table(name = "campaign")
 public class EmailCampaign implements Serializable {
