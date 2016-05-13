@@ -70,10 +70,10 @@
 <!-- Header -->
 <header id="top" class="header">
   <div class="text-vertical-center">
-    <h1>Start Bootstrap</h1>
-    <h3>Free Bootstrap Themes &amp; Templates</h3>
+    <h1>Don't close your browser</h1>
+    <h3>This is a phishing awareness training sent by SE-SIM</h3>
     <br>
-    <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+    <a href="#about" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
   </div>
 </header>
 

@@ -179,6 +179,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping("/phished")
     public String phished(ModelMap modelMap) {
+        //TODO remove this from templates
         return "email/notify";
     }
 

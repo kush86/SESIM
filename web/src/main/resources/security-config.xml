@@ -21,8 +21,11 @@
                                  error-if-maximum-exceeded="true"/>
         </session-management>
 
-        <intercept-url pattern="/" access="hasRole('ROLE_LOGIN')"/>
-        <intercept-url pattern="/users-manager" access="hasRole('ROLE_LOGIN')"/>
+        <!--<intercept-url pattern="/" access="hasRole('ROLE_LOGIN')"/>-->
+        <!--<intercept-url pattern="/login/**" access="hasRole('ROLE_LOGIN')"/>-->
+        <intercept-url pattern="/users-manager/**" access="hasRole('ROLE_LOGIN')"/>
+        <intercept-url pattern="/se-controller/**" access="hasRole('ROLE_LOGIN')"/>
+        <intercept-url pattern="/learning-portal/**" access="permitAll()"/>
 
     </http>
 
