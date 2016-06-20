@@ -16,5 +16,5 @@ INSERT INTO user_category_permission (user_category_id, permission_id) VALUES (1
 INSERT INTO user_category_permission (user_category_id, permission_id) VALUES (1, 6);
 INSERT INTO user_category_permission (user_category_id, permission_id) VALUES (1, 7);
 
-INSERT INTO hms_spm.user (enabled, username, password, status, user_category_id) VALUES (1, 'admin',
+INSERT INTO user (enabled, username, password, status, user_category_id) VALUES (1, 'admin',
 '$2a$10$nSLDupAfFuPhNrtLfnNk4.xwGCeO3yCXdm1ckmp.FVqkl3VIO1l2m', 'ACTIVE', 1);
