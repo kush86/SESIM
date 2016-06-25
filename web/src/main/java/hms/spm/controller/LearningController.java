@@ -10,6 +10,6 @@ public class LearningController {
 
     @RequestMapping("/phished")
     public String phished(ModelMap modelMap) {
-        return "email/notify";
+        return "portal/notify";
     }
 }

@@ -50,7 +50,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping("/add/template")
     public String addEmailTemplate(ModelMap modelMap) {
-        return "email/phished";
+        return "portal/phished";
     }
 
     @RequestMapping(value = "/upload")
@@ -180,18 +180,18 @@ public class PhishingController extends BaseController {
     @RequestMapping("/phished")
     public String phished(ModelMap modelMap) {
         //TODO remove this from templates
-        return "email/notify";
+        return "portal/notify";
     }
 
 
     @RequestMapping("/phished/{name}")
     public String phished1(@PathVariable("name") String name, ModelMap modelMap) {
         System.out.println(name);
-        return "email/phished";
+        return "portal/phished";
     }
 
     @RequestMapping("/phishing")
     public String aboutPhishing(ModelMap modelMap) {
-        return "email/aboutPhishing";
+        return "portal/aboutPhishing";
     }
 }
