@@ -108,6 +108,7 @@
 
     <mvc:resources mapping="/fonts/**" location="/fonts"/>
     <mvc:resources mapping="/images/**" location="/images"/>
+    <mvc:resources mapping="/videos/**" location="/videos"/>
 
     <tx:annotation-driven transaction-manager="transactionManager"/>
 

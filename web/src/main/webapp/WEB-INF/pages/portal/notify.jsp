@@ -49,23 +49,23 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top" onclick=$("#menu-close").click();>Start Bootstrap</a>
+            <a href="#top" onclick=$("#menu-close").click();>About Social Engineering</a>
         </li>
         <li>
-            <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            <a href="#top" onclick=$("#menu-close").click();>Social Engineering Types</a>
         </li>
-        <li>
-            <a href="#about" onclick=$("#menu-close").click();>About</a>
-        </li>
-        <li>
-            <a href="#services" onclick=$("#menu-close").click();>Services</a>
-        </li>
-        <li>
-            <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
-        </li>
-        <li>
-            <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
-        </li>
+        <%--<li>--%>
+        <%--<a href="#about" onclick=$("#menu-close").click();>About</a>--%>
+        <%--</li>--%>
+        <%--<li>--%>
+        <%--<a href="#services" onclick=$("#menu-close").click();>Services</a>--%>
+        <%--</li>--%>
+        <%--<li>--%>
+        <%--<a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>--%>
+        <%--</li>--%>
+        <%--<li>--%>
+        <%--<a href="#contact" onclick=$("#menu-close").click();>Contact</a>--%>
+        <%--</li>--%>
     </ul>
 </nav>
 
@@ -74,14 +74,103 @@
     <div class="text-vertical-center">
         <h1>Don't close your browser</h1>
 
-        <h3>This is a phishing awareness training sent by SE-SIM</h3>
+        <h3>This is a phishing awareness training sent by a Social Engineering Simulation</h3>
         <br>
         <a href="#about" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
     </div>
 </header>
 
-<!-- About -->
 <section id="about" class="about">
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Social Engineering.</h2>
+                <hr>
+                </div>
+            </div>
+        <div class="row">
+
+            <div class="col-md-8">
+
+                <p>“Social Engineering” is any method of theft that manipulates your human nature in order to gain
+                    access to your online financial accounts. Here are a few ways you can protect yourself from thieves
+                    using Social Engineering techniques:</p>
+                <ul>
+                    <li><strong>DON'T RESPOND</strong>
+                        - Don't respond to ANY email or social network post or message that asks for money
+                        or confidential information. Thieves can hack email and social network accounts, and then pose
+                        as a friend or family member in order to gain your trust.
+                    </li>
+                    <li>
+                        <strong>DON'T ASSUME</strong>
+                        - Don't assume that an unsolicited phone call or email is actually from a trusted
+                        source. Thieves can research your purchases or donations, then pose as a business or charity you
+                        trust. Or, they may pose as law enforcement, a bank officer or another trusted authority figure.
+                        Just because they have bits of information about you or your past activities doesn't mean they
+                        are legitimate.
+                    </li>
+                    <li><strong>VERIFY VERIFY VERIFY</strong>
+                        If someone on the phone, or a message in your inbox, is telling you there
+                        is a problem with your online banking account, online auction account or credit card account,
+                        don't give them additional information to “fix” the problem. Instead, hang up the phone or
+                        delete the email and check those accounts directly by logging in normally or calling a published
+                        customer service number.
+                    </li>
+                    <li>
+                        <strong>DON'T USE KNOWN INFO</strong>
+                        - Be conscious what can be learned about you. Many kinds of online
+                        accounts, including online banking, use challenge questions as part of their security. Make sure
+                        you don't choose responses that can be found online. For example, don't use your mother's maiden
+                        name if it is mentioned on a social network profile; or the model of your first car, if you
+                        discussed it on a forum. Thieves are very good at digging out those details from online
+                        searches.
+                    </li>
+                    <li>
+                        <strong>DON'T OPEN IT</strong>
+                        - Remember, even the most innocent email attachments can be infected with computer
+                        malware. Common and popular files like PDFs, JPGs and spreadsheets can provide a platform for
+                        installing viruses or keystroke-logging malware on your computer. If you aren't certain the file
+                        came from a legitimate business, charity or person, don't open it without verifying. Call them
+                        and ask if they sent an email with an attachment.
+                    </li>
+                </ul>
+
+                <p>The thieves are smart and very good at exploiting your honesty and natural cooperation. They can send
+                    an email that looks like it came from a family member, or hijack your best friend's social network
+                    account. Don't let your good nature become your downfall.
+                </p>
+
+                <p>
+                    The best way to avoid Social Engineering schemes is to be cautious and suspicious of ANY request for
+                    money, passwords, account numbers or other confidential information – no matter where it seems to be
+                    coming from.
+                </p>
+            </div>
+            <div class="col-md-4 text-center">
+
+                <%--<div class="embed-responsive embed-responsive-4by3"  aria-hidden="true">--%>
+                    <%--<iframe class="embed-responsive-item" src="<c:url value="/videos/Social_Engineering.mp4?autoplay=false&cc_load_policy=1"/>" allowfullscreen></iframe>--%>
+                    <video width="390" height="200" controls>
+                        <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+
+                    <video width="390" height="200" controls>
+                        <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                <%--</div>--%>
+            </div>
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- About -->
+<section id="types" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -281,49 +370,38 @@
     </div>
 </aside>
 
-<!-- Map -->
-<section id="contact" class="map">
-    <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-            src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-    <br/>
-    <small>
-        <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-    </small>
-    </iframe>
-</section>
-
 <!-- Footer -->
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h4><strong>Start Bootstrap</strong>
-                </h4>
+<%--<footer>--%>
+<%--<div class="container">--%>
+<%--<div class="row">--%>
+<%--<div class="col-lg-10 col-lg-offset-1 text-center">--%>
+<%--<h4><strong>Start Bootstrap</strong>--%>
+<%--</h4>--%>
 
-                <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                <ul class="list-unstyled">
-                    <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                    <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
-                    </li>
-                </ul>
-                <br>
-                <ul class="list-inline">
-                    <li>
-                        <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                    </li>
-                </ul>
-                <hr class="small">
-                <p class="text-muted">Copyright &copy; Your Website 2014</p>
-            </div>
-        </div>
-    </div>
-</footer>
+<%--<p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>--%>
+<%--<ul class="list-unstyled">--%>
+<%--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>--%>
+<%--<li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>--%>
+<%--</li>--%>
+<%--</ul>--%>
+<%--<br>--%>
+<%--<ul class="list-inline">--%>
+<%--<li>--%>
+<%--<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>--%>
+<%--</li>--%>
+<%--<li>--%>
+<%--<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>--%>
+<%--</li>--%>
+<%--<li>--%>
+<%--<a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>--%>
+<%--</li>--%>
+<%--</ul>--%>
+<%--<hr class="small">--%>
+<%--<p class="text-muted">Copyright &copy; Your Website 2014</p>--%>
+<%--</div>--%>
+<%--</div>--%>
+<%--</div>--%>
+<%--</footer>--%>
 
 <!-- jQuery -->
 <script src="<c:url value="/js/jquery.min.js" />"></script>
