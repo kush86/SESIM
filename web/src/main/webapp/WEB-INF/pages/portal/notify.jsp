@@ -10,9 +10,6 @@
 <html lang="en">
 
 <head>
-
-    <link rel="stylesheet" type="text/css"
-          href="/home/kusala/MyProjects/se-sim/SESIM/web/src/main/webapp/css/bootstrap.min.css"/>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,7 +46,7 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top" onclick=$("#menu-close").click();>About Social Engineering</a>
+            <a href="#top" onclick=$("#menu-close").click();>Social Engineering</a>
         </li>
         <li>
             <a href="#top" onclick=$("#menu-close").click();>Social Engineering Types</a>
@@ -72,6 +69,15 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
         <h1>Don't close your browser</h1>
 
         <h3>This is a phishing awareness training sent by a Social Engineering Simulation</h3>
@@ -79,6 +85,18 @@
         <a href="#about" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
     </div>
 </header>
+<section id="definition" class="definition">
+    <div class="col-md-5">
+        <h3>"Social engineering is the art of manipulating people so they give up confidential information."</h3>
+        <br>
+        <h3>The types of information these criminals are seeking can vary, but when individuals are targeted the
+            criminals are
+            usually trying to trick you into giving them your passwords or bank information, or access your computer to
+            secretly install malicious software–that will give them access to your passwords and bank information as
+            well as giving them control over your computer.</h3>
+    </div>
+
+</section>
 
 <section id="about" class="about">
     <div class="container">
@@ -86,17 +104,13 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h2>Social Engineering.</h2>
+                <h2>How to protect your self from Social Engineering.</h2>
                 <hr>
-                </div>
             </div>
+        </div>
         <div class="row">
 
             <div class="col-md-8">
-
-                <p>“Social Engineering” is any method of theft that manipulates your human nature in order to gain
-                    access to your online financial accounts. Here are a few ways you can protect yourself from thieves
-                    using Social Engineering techniques:</p>
                 <ul>
                     <li><strong>DON'T RESPOND</strong>
                         - Don't respond to ANY email or social network post or message that asks for money
@@ -112,7 +126,7 @@
                         are legitimate.
                     </li>
                     <li><strong>VERIFY VERIFY VERIFY</strong>
-                        If someone on the phone, or a message in your inbox, is telling you there
+                        - If someone on the phone, or a message in your inbox, is telling you there
                         is a problem with your online banking account, online auction account or credit card account,
                         don't give them additional information to “fix” the problem. Instead, hang up the phone or
                         delete the email and check those accounts directly by logging in normally or calling a published
@@ -139,28 +153,30 @@
 
                 <p>The thieves are smart and very good at exploiting your honesty and natural cooperation. They can send
                     an email that looks like it came from a family member, or hijack your best friend's social network
-                    account. Don't let your good nature become your downfall.
-                </p>
-
-                <p>
-                    The best way to avoid Social Engineering schemes is to be cautious and suspicious of ANY request for
+                    account. Don't let your good nature become your downfall.The best way to avoid Social Engineering
+                    schemes is to be cautious and suspicious of ANY request for
                     money, passwords, account numbers or other confidential information – no matter where it seems to be
                     coming from.
                 </p>
             </div>
             <div class="col-md-4 text-center">
-
-                <%--<div class="embed-responsive embed-responsive-4by3"  aria-hidden="true">--%>
-                    <%--<iframe class="embed-responsive-item" src="<c:url value="/videos/Social_Engineering.mp4?autoplay=false&cc_load_policy=1"/>" allowfullscreen></iframe>--%>
+                <div class="row">
                     <video width="390" height="200" controls>
                         <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
-
-                    <video width="390" height="200" controls>
-                        <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-dark btn-lg btn-block">Types of attacks >></button>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-dark btn-lg btn-block">Social Engineering Examples >>
+                        </button>
+                    </div>
+                </div>
                 <%--</div>--%>
             </div>
         </div>
@@ -300,11 +316,11 @@
 </section>
 
 <!-- Callout -->
-<aside class="callout">
-    <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
-    </div>
-</aside>
+<%--<aside class="callout">--%>
+<%--<div class="text-vertical-center">--%>
+<%--<h1>Vertically Centered Text</h1>--%>
+<%--</div>--%>
+<%--</aside>--%>
 
 <!-- Portfolio -->
 <section id="portfolio" class="portfolio">

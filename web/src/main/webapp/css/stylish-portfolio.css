@@ -155,7 +155,7 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../images/bg.jpg) no-repeat center center scroll;
+    background: url(../images/bg3.png) center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -166,6 +166,14 @@ hr.small {
 
 .about {
     padding: 10px 0;
+    display: table;
+    width: 100px;
+    height: 100%;
+    background: url(../images/Phishing-Twitter.png) no-repeat center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover
 }
 
 /* Services */
@@ -178,14 +186,12 @@ hr.small {
     margin-bottom: 30px;
 }
 
-/* Callout */
-
-.callout {
+.definition {
     display: table;
     width: 100%;
-    height: 400px;
+    height: 350px;
     color: #fff;
-    background: url(../images/callout.jpg) no-repeat center center scroll;
+    background: url(../images/SocialEngineering-new.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -232,6 +238,10 @@ hr.small {
     height: 500px;
 }
 
+.top-buffer {
+    margin-top: 20px;
+}
+
 @media(max-width:768px) {
     .map {
         height: 75%;
@@ -243,3 +253,4 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+
