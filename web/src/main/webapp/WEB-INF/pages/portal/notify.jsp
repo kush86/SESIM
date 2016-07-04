@@ -77,7 +77,9 @@
 <header id="top" class="header">
     <div class="text-vertical-center">
         <br> <br> <br> <br> <br> <br> <br> <br>
+
         <h1>Don't close your Browser!</h1>
+
         <h3>This is a phishing awareness training sent by a Social Engineering Simulation</h3>
         <br>
         <a href="#definition" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
@@ -88,7 +90,8 @@
         <h3>"Social engineering is the art of manipulating people so they give up confidential information."</h3>
         <br>
         <h4>The types of information these criminals are seeking can vary, but when individuals are targeted the
-            criminals are usually trying to trick you into giving them your passwords or bank information, or access your computer to
+            criminals are usually trying to trick you into giving them your passwords or bank information, or access
+            your computer to
             secretly install malicious software–that will give them access to your passwords and bank information as
             well as giving them control over your computer.</h4>
     </div>
@@ -100,7 +103,7 @@
                 Your browser does not support the video tag.
             </video>
         </div>
-</div>
+    </div>
 </section>
 
 <section id="about" class="section2">
@@ -194,18 +197,18 @@
 
 <!-- About -->
 <%--<section id="types" class="about">--%>
-    <%--<div class="container">--%>
-        <%--<div class="row">--%>
-            <%--<div class="col-lg-12 text-center">--%>
-                <%--<h2>Watch out for hoaxes, phishing and scams.</h2>--%>
+<%--<div class="container">--%>
+<%--<div class="row">--%>
+<%--<div class="col-lg-12 text-center">--%>
+<%--<h2>Watch out for hoaxes, phishing and scams.</h2>--%>
 
-                <%--<p class="lead">Online hoaxes are getting more sophisticated, making it tough to know whether an email,--%>
-                    <%--SMS or website is real. It’s important you learn how to spot the fakes so you stay safer online.</p>--%>
-            <%--</div>--%>
-        <%--</div>--%>
-        <%--<!-- /.row -->--%>
-    <%--</div>--%>
-    <%--<!-- /.container -->--%>
+<%--<p class="lead">Online hoaxes are getting more sophisticated, making it tough to know whether an email,--%>
+<%--SMS or website is real. It’s important you learn how to spot the fakes so you stay safer online.</p>--%>
+<%--</div>--%>
+<%--</div>--%>
+<%--<!-- /.row -->--%>
+<%--</div>--%>
+<%--<!-- /.container -->--%>
 <%--</section>--%>
 
 <!-- Services -->
@@ -341,7 +344,7 @@
 <%--</aside>--%>
 
 <!-- Portfolio -->
-<section id="portfolio" class="portfolio">
+<%--<section id="portfolio" class="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -389,77 +392,150 @@
         <!-- /.row -->
     </div>
     <!-- /.container -->
-</section>
-<section id="slider">
-    <div class="container" style="height: 100vh">
-        <br>
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-            </ol>
+</section>--%>
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
 
-                <div class="item active">
-                    <img src="<c:url value="/images/portfolio-1.jpg" />" alt="Chania" width="460" height="345">
-                    <div class="carousel-caption">
-                        <h3>Chania</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                    </div>
+<section id="gallery">
+    <div class="container">
+        <center><h2>Social Engineering Examples</h2></center>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">Email Spams</h3>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="An email with an attached HTML file"
+                       data-caption="A phishing attack using HTML attachments to target the customers of a specific
+                                organization is often a means of extracting a wide range of financial information from
+                                victims, not of all of which necessarily relates to the company used in the scam."
+                       data-image="<c:url value="/images/examples/amazon_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/amazon_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
                 </div>
-
-                <div class="item">
-                    <img src="<c:url value="/images/portfolio-2.jpg" />" alt="Chania" width="460" height="345">
-                    <div class="carousel-caption">
-                        <h3>Chania</h3>
-                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="An email with an attached HTML file"
+                       data-caption="A phishing attack using HTML attachments to target the customers of a specific
+                                organization is often a means of extracting a wide range of financial information from
+                                victims, not of all of which necessarily relates to the company used in the scam."
+                       data-image="<c:url value="/images/examples/american_express_phishing.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive"
+                             src="<c:url value="/images/examples/american_express_phishing.jpg" />"
+                             alt="Email spam">
+                    </a>
                 </div>
-
-                <div class="item">
-                    <img src="<c:url value="/images/portfolio-3.jpg" />" alt="Flower" width="460" height="345">
-                    <div class="carousel-caption">
-                        <h3>Flowers</h3>
-                        <p>Beatiful flowers in Kolymbari, Crete.</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="Political Events used for spam - Ebola virus"
+                       data-caption="The Ebola epidemic also attracted the attention of spammers. “Nigerians” sent out emails
+                                on behalf of infected Africans who allegedly wanted to leave their fortune to charity.
+                                The fraudsters came up with a new twist on the story which invited recipients to
+                                participate as a guest at a World Health Organization conference. The proposed fee was
+                                350,000 and a car for the job as a WHO representative in the UK."
+                       data-image="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
                 </div>
-
-                <div class="item">
-                    <img src="<c:url value="/images/portfolio-4.jpg" />" alt="Flower" width="460" height="345">
-                    <div class="carousel-caption">
-                        <h3>Flowers</h3>
-                        <p>Beatiful flowers in Kolymbari, Crete.</p>
-                    </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="FIFA world cup lottery spam email"
+                       data-caption="We also saw many fraudulent emails informing recipients that they had won an official
+                       FIFA World Cup lottery. Of course, to get his money, the ‘winner’ faced a few minor preliminary expenses.
+                        But, of course, these so-called winners would never see any money from a competition that they had
+                         never entered in the first place."
+                       data-image="<c:url value="/images/examples/lottery_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/lottery_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
                 </div>
 
             </div>
+        </div>
 
-            <%--<a class="left carousel-control" href="#myCarousel" data-slide="prev"--%>
-               <%--onclick="$('#myCarousel').carousel('prev')">‹</a>--%>
-            <%--<a class="right carousel-control" href="#myCarousel" data-slide="next"--%>
-               <%--onclick="$('#myCarousel').carousel('next')">›</a>--%>
 
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" onclick="$('#myCarousel').carousel('next')">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3 class="page-header">Fake notifications from mobile applications</h3>
+
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="Viber fake notification"
+                       data-caption="The notification of the voice message supposedly
+                       sent via Viber contains a “Listen to Voice Message” button that initiates the download of a malicious archive."
+                       data-image="<c:url value="/images/examples/viber_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/viber_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="Fake notification Email for WhatsApp"
+                       data-caption="There can’t be emails telling users that they’ve received an image via WhatsApp because
+                       registration on WhatsApp does not require an email address."
+                       data-image="<c:url value="/images/examples/whatsapp_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/whatsapp_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                    <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                       data-title="Google hangout fake notification"
+                       data-caption="a notification about a voice message allegedly sent via Hangouts contains a hyperlink
+                       disguised as the “Play” button. After clicking “Play”, instead of
+                       hearing the voice message the user is sent to a compromised legitimate site from which integrated
+                       JavaScript redirects him to an advertising page."
+                       data-image="<c:url value="/images/examples/hangout_spam.jpg" />"
+                       data-target="#image-gallery">
+                        <img class="img-responsive" src="<c:url value="/images/examples/hangout_spam.jpg" />"
+                             alt="Email spam">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span
+                                class="sr-only">Close</span></button>
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive" src="">
+                    </div>
+                    <div class="modal-footer">
+
+                        <div class="col-md-2">
+                            <button type="button" class="btn btn-primary" id="show-previous-image">Previous</button>
+                        </div>
+
+                        <div class="col-md-8 text-justify" id="image-gallery-caption">
+                            This text will be overwritten by jQuery
+                        </div>
+
+                        <div class="col-md-2">
+                            <button type="button" id="show-next-image" class="btn btn-default">Next</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 </section>
 
 <!-- Call to Action -->
-<aside class="call-to-action bg-primary">
+<%--<aside class="call-to-action bg-primary">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -469,7 +545,7 @@
             </div>
         </div>
     </div>
-</aside>
+</aside>--%>
 
 <!-- jQuery -->
 <script src="<c:url value="/js/jquery.min.js" />"></script>
@@ -505,6 +581,65 @@
             }
         });
     });
+
+    $(document).ready(function () {
+
+        loadGallery(true, 'a.thumbnail');
+
+        //This function disables buttons when needed
+        function disableButtons(counter_max, counter_current) {
+            $('#show-previous-image, #show-next-image').show();
+            if (counter_max == counter_current) {
+                $('#show-next-image').hide();
+            } else if (counter_current == 1) {
+                $('#show-previous-image').hide();
+            }
+        }
+
+        /**
+         *
+         * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+         * @param setClickAttr  Sets the attribute for the click handler.
+         */
+
+        function loadGallery(setIDs, setClickAttr) {
+            var current_image,
+                    selector,
+                    counter = 0;
+
+            $('#show-next-image, #show-previous-image').click(function () {
+                if ($(this).attr('id') == 'show-previous-image') {
+                    current_image--;
+                } else {
+                    current_image++;
+                }
+
+                selector = $('[data-image-id="' + current_image + '"]');
+                updateGallery(selector);
+            });
+
+            function updateGallery(selector) {
+                var $sel = selector;
+                current_image = $sel.data('image-id');
+                $('#image-gallery-caption').text($sel.data('caption'));
+                $('#image-gallery-title').text($sel.data('title'));
+                $('#image-gallery-image').attr('src', $sel.data('image'));
+                disableButtons(counter, $sel.data('image-id'));
+            }
+
+            if (setIDs == true) {
+                $('[data-image-id]').each(function () {
+                    counter++;
+                    $(this).attr('data-image-id', counter);
+                });
+            }
+            $(setClickAttr).on('click', function () {
+                updateGallery($(this));
+            });
+        }
+    });
+
+
 </script>
 
 </body>
