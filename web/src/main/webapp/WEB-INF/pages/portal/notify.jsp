@@ -35,6 +35,13 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
 
 </head>
 
@@ -69,36 +76,34 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-        <h1>Don't close your browser</h1>
-
+        <br> <br> <br> <br> <br> <br> <br> <br>
+        <h1>Don't close your Browser!</h1>
         <h3>This is a phishing awareness training sent by a Social Engineering Simulation</h3>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
+        <a href="#definition" class="btn btn-dark btn-lg">Learn how to detect phishing scams</a>
     </div>
 </header>
 <section id="definition" class="definition">
     <div class="col-md-5">
         <h3>"Social engineering is the art of manipulating people so they give up confidential information."</h3>
         <br>
-        <h3>The types of information these criminals are seeking can vary, but when individuals are targeted the
-            criminals are
-            usually trying to trick you into giving them your passwords or bank information, or access your computer to
+        <h4>The types of information these criminals are seeking can vary, but when individuals are targeted the
+            criminals are usually trying to trick you into giving them your passwords or bank information, or access your computer to
             secretly install malicious software–that will give them access to your passwords and bank information as
-            well as giving them control over your computer.</h3>
+            well as giving them control over your computer.</h4>
     </div>
-
+    <div class="col-md-7 text-center">
+        <div class="row">
+            <br>
+            <video width="700" height="300" controls>
+                <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+</div>
 </section>
 
-<section id="about" class="about">
+<section id="about" class="section2">
     <div class="container">
 
 
@@ -162,13 +167,15 @@
             <div class="col-md-4 text-center">
                 <div class="row">
                     <video width="390" height="200" controls>
-                        <source src="<c:url value="/videos/Social_Engineering.mp4"/>" type="video/mp4">
+                        <source src="<c:url value="/videos/Biggest-Online-Threats.3gp"/>" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="row top-buffer">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">Types of attacks >></button>
+
+                        <a href="#services" class="btn btn-dark btn-lg btn-block">Types of attacks >></a>
+                        <%--<button type="button" class="btn btn-dark btn-lg btn-block">Types of attacks >></button>--%>
                     </div>
                 </div>
                 <div class="row top-buffer">
@@ -186,10 +193,27 @@
 </section>
 
 <!-- About -->
-<section id="types" class="about">
+<%--<section id="types" class="about">--%>
+    <%--<div class="container">--%>
+        <%--<div class="row">--%>
+            <%--<div class="col-lg-12 text-center">--%>
+                <%--<h2>Watch out for hoaxes, phishing and scams.</h2>--%>
+
+                <%--<p class="lead">Online hoaxes are getting more sophisticated, making it tough to know whether an email,--%>
+                    <%--SMS or website is real. It’s important you learn how to spot the fakes so you stay safer online.</p>--%>
+            <%--</div>--%>
+        <%--</div>--%>
+        <%--<!-- /.row -->--%>
+    <%--</div>--%>
+    <%--<!-- /.container -->--%>
+<%--</section>--%>
+
+<!-- Services -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<section id="services" class="services bg-primary1">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col col-md-offset-2 col-md-8 text-center">
                 <h2>Watch out for hoaxes, phishing and scams.</h2>
 
                 <p class="lead">Online hoaxes are getting more sophisticated, making it tough to know whether an email,
@@ -198,12 +222,6 @@
         </div>
         <!-- /.row -->
     </div>
-    <!-- /.container -->
-</section>
-
-<!-- Services -->
-<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<section id="services" class="services bg-primary">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
@@ -327,7 +345,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-10 col-lg-offset-1 text-center">
-                <h2>Our Work</h2>
+                <h2>Social Engineering Examples</h2>
                 <hr class="small">
                 <div class="row">
                     <div class="col-md-6">
@@ -372,6 +390,73 @@
     </div>
     <!-- /.container -->
 </section>
+<section id="slider">
+    <div class="container" style="height: 100vh">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <img src="<c:url value="/images/portfolio-1.jpg" />" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="<c:url value="/images/portfolio-2.jpg" />" alt="Chania" width="460" height="345">
+                    <div class="carousel-caption">
+                        <h3>Chania</h3>
+                        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="<c:url value="/images/portfolio-3.jpg" />" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="<c:url value="/images/portfolio-4.jpg" />" alt="Flower" width="460" height="345">
+                    <div class="carousel-caption">
+                        <h3>Flowers</h3>
+                        <p>Beatiful flowers in Kolymbari, Crete.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <%--<a class="left carousel-control" href="#myCarousel" data-slide="prev"--%>
+               <%--onclick="$('#myCarousel').carousel('prev')">‹</a>--%>
+            <%--<a class="right carousel-control" href="#myCarousel" data-slide="next"--%>
+               <%--onclick="$('#myCarousel').carousel('next')">›</a>--%>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" onclick="$('#myCarousel').carousel('prev')">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" onclick="$('#myCarousel').carousel('next')">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+</section>
 
 <!-- Call to Action -->
 <aside class="call-to-action bg-primary">
@@ -385,39 +470,6 @@
         </div>
     </div>
 </aside>
-
-<!-- Footer -->
-<%--<footer>--%>
-<%--<div class="container">--%>
-<%--<div class="row">--%>
-<%--<div class="col-lg-10 col-lg-offset-1 text-center">--%>
-<%--<h4><strong>Start Bootstrap</strong>--%>
-<%--</h4>--%>
-
-<%--<p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>--%>
-<%--<ul class="list-unstyled">--%>
-<%--<li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>--%>
-<%--<li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>--%>
-<%--</li>--%>
-<%--</ul>--%>
-<%--<br>--%>
-<%--<ul class="list-inline">--%>
-<%--<li>--%>
-<%--<a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>--%>
-<%--</li>--%>
-<%--<li>--%>
-<%--<a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>--%>
-<%--</li>--%>
-<%--<li>--%>
-<%--<a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>--%>
-<%--</li>--%>
-<%--</ul>--%>
-<%--<hr class="small">--%>
-<%--<p class="text-muted">Copyright &copy; Your Website 2014</p>--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--</div>--%>
-<%--</footer>--%>
 
 <!-- jQuery -->
 <script src="<c:url value="/js/jquery.min.js" />"></script>
