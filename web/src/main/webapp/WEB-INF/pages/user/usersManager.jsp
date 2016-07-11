@@ -27,6 +27,9 @@
                             <a class="btn btn-default" data-toggle='modal' data-target="#createUserModal">
                                 Create User
                             </a>
+                            <a class="btn btn-default" data-toggle='modal' data-target="#uploadUserModal">
+                          Upload Users from csv
+                            </a>
                         </div>
                     </security:authorize>
                 </div>
@@ -131,6 +134,7 @@
         <jsp:include page="createUserModal.jsp"/>
         <jsp:include page="editUserModal.jsp"/>
         <jsp:include page="changeUserPasswordModal.jsp"/>
+        <jsp:include page="uploadUserCsv.jsp"/>
     </jsp:attribute>
 
     <jsp:attribute name="js_inline">

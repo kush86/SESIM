@@ -16,11 +16,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import ucsc.mis.orm.model.Permission;
 import ucsc.mis.orm.model.User;
 import ucsc.mis.orm.model.UserCategory;
 
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.List;
 
 @Controller
@@ -278,4 +282,31 @@ public class UserManagementController extends BaseController {
 
         return "redirect:/users-manager/";
     }
+
+//    @RequestMapping(value = "/upload")
+//    public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
+//
+//        String message;
+//        String path = "";
+//        File newFile = null;
+//        if (!file.isEmpty()) {
+//            try {
+//                path = file.get;
+//                newFile = new File(path);
+//                byte[] bytes = file.getBytes();
+//                BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(new File(path)));
+//                stream.write(bytes);
+//                stream.close();
+//                message = "You successfully uploaded " + name + "!";
+//            } catch (Exception e) {
+//                message = "You failed to upload " + name + " => " + e.getMessage();
+//            }
+//        } else {
+//            message = "You failed to upload " + name + " because the file was empty.";
+//        }
+//
+//        setUImessageRedirectAttributeValues(redirectAttributes, CSS_SUCCESS, message);
+//        return "redirect:/se-controller/email/templates";
+//    }
+
 }

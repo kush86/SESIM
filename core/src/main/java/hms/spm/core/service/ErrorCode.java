@@ -7,6 +7,7 @@ public enum ErrorCode {
 
     /* user mangement error codes */
     DUPLICATE_USERNAME("Username is already in use"),
+    DUPLICATE_EMAIL("E-mail is already in use"),
     INVALID_CONFIRM_PASSWORD("'Confirm password' and 'Password' do not match"),
     EMPTY_REQUIRED_PARAMETERS("Required parameter(s) are empty"),
     INVALID_USER_CATEGORY("Selected User Type is invalid"),

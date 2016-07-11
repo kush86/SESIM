@@ -6,7 +6,8 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-@Service("userService") @Transactional public interface UserService {
+@Service("userService") @Transactional
+public interface UserService {
 
     long createUser(String userName, String email, String password, String confirmPassword, long userCategoryId) throws
             UserManagementException;
@@ -35,4 +36,6 @@ import java.util.List;
     User getUserById(long id);
 
     long createUser(String userName, String email, String phoneNo) throws UserManagementException;
+
+    long createUser(User user);
 }

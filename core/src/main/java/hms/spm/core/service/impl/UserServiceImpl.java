@@ -192,9 +192,9 @@ public class UserServiceImpl implements UserService {
 
         validateEmail(email);
 
-        User anotherUser = userDao.findUserByName(userName);
+        User anotherUser = userDao.findUserByEmail(email);
         if (anotherUser != null) {
-            throw new UserManagementException(ErrorCode.DUPLICATE_USERNAME);
+            throw new UserManagementException(ErrorCode.DUPLICATE_EMAIL);
         }
 
         User user = new User(userName);
@@ -202,6 +202,27 @@ public class UserServiceImpl implements UserService {
         user.setPhoneNo(phoneNo);
 //        user.setPassword(password);
 //        user.setUserCategory(userCategory);
+        user.setStatus(User.ACTIVE);
+        user.setEnabled(true);
+
+        long newUserId = 0L;
+        newUserId = userDao.save(user);
+        return newUserId;
+    }
+
+    public long createUser(User user) {
+        if (user.getName() == null || user.getName().isEmpty()) {
+            throw new UserManagementException(ErrorCode.EMPTY_REQUIRED_PARAMETERS);
+        }
+
+        validateEmail(user.getEmail());
+
+        User anotherUser = userDao.findUserByEmail(user.getEmail());
+
+        if (anotherUser != null) {
+            throw new UserManagementException(ErrorCode.DUPLICATE_EMAIL);
+        }
+
         user.setStatus(User.ACTIVE);
         user.setEnabled(true);
 

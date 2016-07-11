@@ -18,4 +18,6 @@ public interface UserDao extends UniversalDao<User> {
     List<User> findUsersByType(UserCategory userCategory);
 
     List<User> findNonAdminUsers(UserCategory userCategory);
+
+    User findUserByEmail(String email);
 }

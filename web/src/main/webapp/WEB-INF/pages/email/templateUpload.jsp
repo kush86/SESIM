@@ -17,17 +17,55 @@
 
                 <form class="form-horizontal" method="post" role="form" enctype="multipart/form-data"
                       action="<c:url value="/se-controller/upload"/>">
-                    File to upload:
 
-                    <input type="file" id="file-path" name="file">
-                    <br/> Name:
-                    <input type="text" id="file-name" name="name">
-                    <br/>
-                    <br/>
-                    <input type="submit" value="Upload"> Press here to upload the file!
+                    <div class="form-group">
+                        <label for="file-name" class="col-md-3 control-label">Template Name</label>
+
+                        <div class="col-sm-9">
+                            <input type="text" id="file-name" name="name" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="file-name" class="col-md-3 control-label">File Path</label>
+
+                        <div class="col-md-9">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Select CSV file" id="path">
+                            <span class="input-group-btn">
+                                <button onclick="$('input[id=file-path]').click();" class="btn btn-secondary"
+                                        type="button">
+                                    Browse
+                                </button>
+                            </span>
+                            </div>
+                        </div>
+                    </div>
+                    <%--<div>--%>
+
+
+                    <input type="file" id="file-path" name="file" class="btn btn-default" style="display:none">
+
+                    <%--</div>--%>
+                    <input type="submit" hidden="true" value="Upload" id="upload-btn">
                 </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        onclick="document.getElementById('upload-btn').click();">
+                    Upload
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button>
             </div>
 
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $('input[id=file-path]').change(function () {
+        $('#path').val($(this).val());
+    });
+</script>

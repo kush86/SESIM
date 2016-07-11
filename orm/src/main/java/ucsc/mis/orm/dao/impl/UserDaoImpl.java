@@ -54,4 +54,10 @@ public class UserDaoImpl extends UniversalDaoImpl<User> implements UserDao {
 //
 //        return query.list();
     }
+
+    public User findUserByEmail(String email) {
+        Session session = getCurrentSession();
+
+        return (User) session.createCriteria(User.class).add(Restrictions.eq("email", email)).uniqueResult();
+    }
 }
