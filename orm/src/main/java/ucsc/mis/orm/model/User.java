@@ -33,7 +33,7 @@ public class User implements Serializable {
     @Column(name = "id")
     private long id;
 
-    @Column(name = "username", unique = true, nullable = false)
+    @Column(name = "username", nullable = false)
     private String name;
 
     @Column(name="first_name")
@@ -42,7 +42,7 @@ public class User implements Serializable {
     @Column(name="last_name")
     private String lastName;
 
-    @Column(name = "email", nullable = false)
+    @Column(name = "email", unique = true)
     private String email;
 
     @Column(name = "password")
