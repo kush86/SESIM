@@ -27,7 +27,7 @@
     <!-- Custom Fonts -->
     <link href="<c:url value="/css/font-awesome.min.css" />" rel="stylesheet" type="text/css">
     <%--<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"--%>
-          <%--rel="stylesheet" type="text/css">--%>
+    <%--rel="stylesheet" type="text/css">--%>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,7 +76,7 @@
 <!-- Header -->
 <header id="top" class="header">
     <div class="text-vertical-center">
-        <br> <br> <br> <br> <br> <br> <br> <br>
+        <br> <br> <br> <br> <br>
 
         <h1>Don't close your Browser!</h1>
 
@@ -183,8 +183,16 @@
                 </div>
                 <div class="row top-buffer">
                     <div class="col-md-12">
-                        <button type="button" class="btn btn-dark btn-lg btn-block">Social Engineering Examples >>
-                        </button>
+                        <a href="#example_gallery" class="btn btn-dark btn-lg btn-block">Social Engineering Examples
+                            >></a>
+                        <%--<button type="button" class="btn btn-dark btn-lg btn-block">Social Engineering Examples >>--%>
+                        <%--</button>--%>
+                    </div>
+                </div>
+                <div class="row top-buffer">
+                    <div class="col-md-12">
+                        <a href="#instructions_gallery" class="btn btn-dark btn-lg btn-block">
+                            Know wow to catch a phish!>></a>
                     </div>
                 </div>
                 <%--</div>--%>
@@ -246,7 +254,7 @@
                                         emails as they could be fake
                                     </li>
                                 </ul>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#example_gallery" class="btn btn-dark">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -276,7 +284,7 @@
                                     <li>Requests for financial or personal information</li>
                                 </ul>
 
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#example_gallery" class="btn btn-dark">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -306,7 +314,7 @@
                                         asking for money. Their account may have been hacked.
                                     </li>
                                 </ul>
-                                <a href="#" class="btn btn-light">Learn More</a>
+                                <a href="#example_gallery" class="btn btn-dark">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -327,60 +335,60 @@
             <div class="col-lg-12">
                 <h3 class="page-header">Email Spams</h3>
 
-               <div class="panel-body">
-                   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                       <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                          data-title="An email with an attached HTML file"
-                          data-caption="A phishing attack using HTML attachments to target the customers of a specific
+                <div class="panel-body">
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                           data-title="An email with an attached HTML file"
+                           data-caption="A phishing attack using HTML attachments to target the customers of a specific
                                 organization is often a means of extracting a wide range of financial information from
                                 victims, not of all of which necessarily relates to the company used in the scam."
-                          data-image="<c:url value="/images/examples/amazon_spam.jpg" />"
-                          data-target="#image-gallery">
-                           <img class="img-responsive" src="<c:url value="/images/examples/amazon_spam.jpg" />"
-                                alt="Email spam">
-                       </a>
-                   </div>
-                   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                       <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                          data-title="An email with an attached HTML file"
-                          data-caption="A phishing attack using HTML attachments to target the customers of a specific
+                           data-image="<c:url value="/images/examples/amazon_spam.jpg" />"
+                           data-target="#image-gallery">
+                            <img class="img-responsive" src="<c:url value="/images/examples/amazon_spam.jpg" />"
+                                 alt="Email spam">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                           data-title="An email with an attached HTML file"
+                           data-caption="A phishing attack using HTML attachments to target the customers of a specific
                                 organization is often a means of extracting a wide range of financial information from
                                 victims, not of all of which necessarily relates to the company used in the scam."
-                          data-image="<c:url value="/images/examples/american_express_phishing.jpg" />"
-                          data-target="#image-gallery">
-                           <img class="img-responsive"
-                                src="<c:url value="/images/examples/american_express_phishing.jpg" />"
-                                alt="Email spam">
-                       </a>
-                   </div>
-                   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                       <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                          data-title="Political Events used for spam - Ebola virus"
-                          data-caption="The Ebola epidemic also attracted the attention of spammers. “Nigerians” sent out emails
+                           data-image="<c:url value="/images/examples/american_express_phishing.jpg" />"
+                           data-target="#image-gallery">
+                            <img class="img-responsive"
+                                 src="<c:url value="/images/examples/american_express_phishing.jpg" />"
+                                 alt="Email spam">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                           data-title="Political Events used for spam - Ebola virus"
+                           data-caption="The Ebola epidemic also attracted the attention of spammers. “Nigerians” sent out emails
                                 on behalf of infected Africans who allegedly wanted to leave their fortune to charity.
                                 The fraudsters came up with a new twist on the story which invited recipients to
                                 participate as a guest at a World Health Organization conference. The proposed fee was
                                 350,000 and a car for the job as a WHO representative in the UK."
-                          data-image="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
-                          data-target="#image-gallery">
-                           <img class="img-responsive" src="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
-                                alt="Email spam">
-                       </a>
-                   </div>
-                   <div class="col-lg-3 col-md-4 col-xs-6 thumb">
-                       <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
-                          data-title="FIFA world cup lottery spam email"
-                          data-caption="We also saw many fraudulent emails informing recipients that they had won an official
+                           data-image="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
+                           data-target="#image-gallery">
+                            <img class="img-responsive" src="<c:url value="/images/examples/ebola_virus_spam.jpg" />"
+                                 alt="Email spam">
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                        <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
+                           data-title="FIFA world cup lottery spam email"
+                           data-caption="We also saw many fraudulent emails informing recipients that they had won an official
                        FIFA World Cup lottery. Of course, to get his money, the ‘winner’ faced a few minor preliminary expenses.
                         But, of course, these so-called winners would never see any money from a competition that they had
                          never entered in the first place."
-                          data-image="<c:url value="/images/examples/lottery_spam.jpg" />"
-                          data-target="#image-gallery">
-                           <img class="img-responsive" src="<c:url value="/images/examples/lottery_spam.jpg" />"
-                                alt="Email spam">
-                       </a>
-                   </div>
-               </div>
+                           data-image="<c:url value="/images/examples/lottery_spam.jpg" />"
+                           data-target="#image-gallery">
+                            <img class="img-responsive" src="<c:url value="/images/examples/lottery_spam.jpg" />"
+                                 alt="Email spam">
+                        </a>
+                    </div>
+                </div>
 
             </div>
         </div>
@@ -499,9 +507,11 @@
 
 <section id="instructions_gallery">
     <div class="container">
-        <center><h2>Know how to catch a Phish!</h2></center>
+        <%--<center><h2>Know how to catch a Phish!</h2></center>--%>
         <div class="row">
             <div class="col-lg-12">
+                <h3 class="page-header">Know how to catch a Phish!</h3>
+
                 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
                     <a class="thumbnail" href="#" data-image-id="" data-toggle="modal"
                        data-title="Identify a phishing email"
@@ -529,7 +539,8 @@
                        data-caption=""
                        data-image="<c:url value="/images/examples/phishing-and-vishing-campaign-attack.jpg" />"
                        data-target="#image-gallery">
-                        <img class="img-responsive" src="<c:url value="/images/examples/phishing-and-vishing-campaign-attack.jpg" />"
+                        <img class="img-responsive"
+                             src="<c:url value="/images/examples/phishing-and-vishing-campaign-attack.jpg" />"
                              alt="Email spam">
                     </a>
                 </div>
@@ -546,8 +557,8 @@
 
             </div>
         </div>
-        </div>
-    </section>
+    </div>
+</section>
 
 <!-- jQuery -->
 <script src="<c:url value="/js/jquery.min.js" />"></script>
