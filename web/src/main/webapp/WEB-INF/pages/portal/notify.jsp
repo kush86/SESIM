@@ -58,18 +58,7 @@
         <li>
             <a href="#top" onclick=$("#menu-close").click();>Social Engineering Types</a>
         </li>
-        <%--<li>--%>
-        <%--<a href="#about" onclick=$("#menu-close").click();>About</a>--%>
-        <%--</li>--%>
-        <%--<li>--%>
-        <%--<a href="#services" onclick=$("#menu-close").click();>Services</a>--%>
-        <%--</li>--%>
-        <%--<li>--%>
-        <%--<a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>--%>
-        <%--</li>--%>
-        <%--<li>--%>
-        <%--<a href="#contact" onclick=$("#menu-close").click();>Contact</a>--%>
-        <%--</li>--%>
+
     </ul>
 </nav>
 
