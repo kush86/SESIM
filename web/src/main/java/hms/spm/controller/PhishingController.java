@@ -17,10 +17,12 @@ import ucsc.mis.orm.model.EmailCampaign;
 import ucsc.mis.orm.model.SMSCampaign;
 import ucsc.mis.service.EmailService;
 import ucsc.mis.service.EmailTemplateService;
+import ucsc.mis.service.ResponseService;
 
 import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.Date;
 
 /**
  * Created by kusala on 11/27/15.
@@ -36,6 +38,8 @@ public class PhishingController extends BaseController {
     EmailCampaignService campaignService;
     @Autowired
     SmsCampaignService smsCampaignService;
+    @Autowired
+    ResponseService responseService;
 
     @RequestMapping("/")
     public String prepareEmail(ModelMap modelMap) {
@@ -55,7 +59,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping(value = "/upload")
     public String handleFileUpload(@RequestParam("file") MultipartFile file, @RequestParam("name") String name,
-            RedirectAttributes redirectAttributes) {
+                                   RedirectAttributes redirectAttributes) {
 
         String message;
         String path = "";
@@ -101,7 +105,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping(value = "/save/campaign", method = RequestMethod.POST)
     public String saveCampaign(@ModelAttribute("currentCampaign") EmailCampaign currentCampaign,
-            RedirectAttributes redirectAttributes) {
+                               RedirectAttributes redirectAttributes) {
 
         if (currentCampaign == null) {
             setUImessageRedirectAttributeValues(redirectAttributes, CSS_DANGER, "Error while creating campaign");
@@ -115,7 +119,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping(value = "/run/{id}")
     public String startCampaign(@PathVariable("id") String id, ModelMap modelMap,
-            RedirectAttributes redirectAttributes) {
+                                RedirectAttributes redirectAttributes) {
 
         try {
             campaignService.startCampaign(Long.parseLong(id));
@@ -142,12 +146,12 @@ public class PhishingController extends BaseController {
     public String createSmsCampaign(@ModelAttribute SMSCampaign currentCampaign, ModelMap modelMap) {
         modelMap.put("currentCampaign", currentCampaign);
 
-       return "campaign/createSmsCampaign";
+        return "campaign/createSmsCampaign";
     }
 
     @RequestMapping(value = "/save/sms/campaign", method = RequestMethod.POST)
     public String saveSmsCampaign(@ModelAttribute("currentCampaign") SMSCampaign currentCampaign,
-            RedirectAttributes redirectAttributes) {
+                                  RedirectAttributes redirectAttributes) {
 
         if (currentCampaign == null) {
             setUImessageRedirectAttributeValues(redirectAttributes, CSS_DANGER, "Error while creating campaign");
@@ -161,7 +165,7 @@ public class PhishingController extends BaseController {
 
     @RequestMapping(value = "/run/sms/{id}")
     public String startSmsCampaign(@PathVariable("id") String id, ModelMap modelMap,
-            RedirectAttributes redirectAttributes) {
+                                   RedirectAttributes redirectAttributes) {
 
         try {
             smsCampaignService.startCampaign(Long.parseLong(id));
@@ -177,17 +181,17 @@ public class PhishingController extends BaseController {
     /* phishing */
 
 
-    @RequestMapping("/phished")
-    public String phished(ModelMap modelMap) {
-        //TODO remove this from templates
+//    @RequestMapping("/phished")
+//    public String phished(ModelMap modelMap) {
+//        //TODO remove this from templates
+//        return "portal/notify";
+//    }
+
+
+    @RequestMapping("/phished/{user}/{campaign}")
+    public String phished1(@PathVariable("user") String userId, @PathVariable("campaign") String campaignId, ModelMap modelMap) {
+        responseService.createResponse(userId, campaignId, new Date());
         return "portal/notify";
-    }
-
-
-    @RequestMapping("/phished/{name}")
-    public String phished1(@PathVariable("name") String name, ModelMap modelMap) {
-        System.out.println(name);
-        return "portal/phished";
     }
 
     @RequestMapping("/phishing")

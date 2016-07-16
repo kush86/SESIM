@@ -204,6 +204,8 @@ public class UserManagementController extends BaseController {
                     "User activation failed: " + e.getErrorCode().getDetailedError());
         }
 
+        logger.info("deactivated ************ ");
+
         return "redirect:/users-manager/";
     }
 

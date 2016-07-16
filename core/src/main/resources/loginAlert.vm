@@ -192,7 +192,7 @@
                                                 <tbody>
                                                 <tr>
                                                     <td style="border-collapse:collapse;border-radius:2px;text-align:center;display:block;border:solid 1px #344c80;background:#4c649b;padding:7px 16px 11px 16px">
-                                                        <a href="http://localhost:8080/se-sim/se-controller/phished/?${user}"
+                                                        <a href="http://localhost:8080/se-sim/se-controller/phished/?${user}?${campaign}"
                                                            style="color:#3b5998;text-decoration:none;display:block"
                                                            target="_blank">
                                                             <center><font size="3"><span

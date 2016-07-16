@@ -47,7 +47,8 @@ public class UserDaoImpl extends UniversalDaoImpl<User> implements UserDao {
         Session session = getCurrentSession();
 
 
-        return session.createCriteria(User.class).add(Restrictions.isNull("userCategory")).list();
+        return session.createCriteria(User.class).add(Restrictions.isNull("userCategory"))
+                .add(Restrictions.eq("status", "ACTIVE")).list();
 
 //        Query query = session.createQuery("FROM User WHERE userCategory <>:admin");
 //        query.setParameter("admin", userCategory);
