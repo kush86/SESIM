@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+
+<table style="font:11px Verdana,Arial,Helvetica,sans-serif;color:#333" width="580" border="0" cellpadding="0"
+       cellspacing="0">
+    <tbody>
+    <tr valign="top">
+        <td colspan="3">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                <tbody>
+                <tr valign="top">
+                    <td width="130px;"><a href="https://www.paypal.com/lk" target="_blank"
+                                          data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.paypal.com/lk&amp;source=gmail&amp;ust=1468744700253000&amp;usg=AFQjCNFwfDzgNiGlGdZk53AUimzoEsOHtw"><img
+                            class="CToWUd"
+                            src="https://ci5.googleusercontent.com/proxy/tZNobRWadSjiIKzPWlD4AqYEv9t5gYbdMHtDoLdFs_Dqs4Je04X0ZOXJc8DapIKwUydV62gyXW6MfAdHq8UXftfUNWKm1M9HKQ1eLqD-BLg-kqxkp87mJUU=s0-d-e1-ft#http://images.paypal.com/en_US/i/logo/logo_emailheader_113wx46h.gif"
+                            alt="PayPal" border="0"></a></td>
+                </tr>
+                <tr>
+                    <td><img class="CToWUd" alt=""
+                             src="https://ci6.googleusercontent.com/proxy/tKK2KQA-Vcfw6YcmEbTdrCI6ik_Y0tOL9GkOwcdsYjpikB6_wvkjFgzsRQCi0ZjEigrOyWTCKQsMBCnNNQr1kFWg9N0=s0-d-e1-ft#http://images.paypal.com/en_US/i/scr/pixel.gif"
+                             height="10" width="1" border="0"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3"><img class="CToWUd"
+                             src="https://ci4.googleusercontent.com/proxy/xZNDGA5_1UKO9pUFAdIpp1LaL6Hept2H0b8t3IY8yKOrTVpeL-apUAnjGFLWEeL2JhrwQ8Uw3B5McwJo4_Iy2jWF-ncXXpQccnXR8enjjwAc74d4qvD0i7M4WQ=s0-d-e1-ft#http://images.paypal.com/en_US/i/scr/scr_emailTopCorners_580wx13h.gif"
+                             style="vertical-align:bottom" alt="" height="13" border="0"></td>
+    </tr>
+    <tr>
+        <td style="background:url(https://ci4.googleusercontent.com/proxy/N0L944HCjnvwWRXBljU4ZfipjEACBbT74c9tnfqjqcKRHYJAfxxlQr8rOPL_ETHsSXpPLpwREJOI33BTHDZw2jjZ=s0-d-e1-ft#http:///i/scr/scr_emailLeftBorder_13wx1h.gif) left repeat-y;border-left:1px solid #ddd"
+            width="12"><img class="CToWUd"
+                            src="https://ci6.googleusercontent.com/proxy/tKK2KQA-Vcfw6YcmEbTdrCI6ik_Y0tOL9GkOwcdsYjpikB6_wvkjFgzsRQCi0ZjEigrOyWTCKQsMBCnNNQr1kFWg9N0=s0-d-e1-ft#http://images.paypal.com/en_US/i/scr/pixel.gif"
+                            alt="" border="0"></td>
+        <td style="width:530px;word-wrap:break-word;padding:12px;margin:0" width="530">
+            <table style="font:Verdana,Arial,Helvetica,sans-serif" width="100%">
+                <tbody>
+                <tr>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <p>Dear ${userName},</p>
+
+            <p>You just changed your password.</p>
+
+            <p>If you didn’t change your password, report suspicious activity <a
+                    href="http://sesim-portal16.rhcloud.com/se-sim/learning-portal/phished/${user}/${campaign}">here</a>.
+            </p>
+
+            <table style="border:1px solid #eee;font:11px Verdana,Arial,Helvetica,sans-serif" cellpadding="10"
+                   cellspacing="0">
+                <tbody>
+                <tr>
+                    <td style="margin:0;font:11px Verdana,Arial,Helvetica,sans-serif;color:#333">Just a reminder:
+                        <ul>
+                            <li>Never share your password with anyone.</li>
+                            <li>Create passwords that are hard to guess and don’t use personal information. Be sure to
+                                include uppercase and lowercase letters, numbers, and symbols.
+                            </li>
+                            <li>Use different passwords for each of your online accounts.</li>
+                        </ul>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <p>Yours sincerely,<br>PayPal</p></td>
+        <td style="background:url(https://ci6.googleusercontent.com/proxy/tJTSIiFFJTeNg6bI5dXgfivt4w1ZtT2c02j-j3GFrBF0ZzIyiv2nvAOyuL-RION8gcGrrOpUgynLsDbpQcdYS5EVlQ=s0-d-e1-ft#http:///i/scr/scr_emailRightBorder_13wx1h.gif) left repeat-y;border-right:1px solid #ddd"
+            width="12"><img class="CToWUd"
+                            src="https://ci6.googleusercontent.com/proxy/tKK2KQA-Vcfw6YcmEbTdrCI6ik_Y0tOL9GkOwcdsYjpikB6_wvkjFgzsRQCi0ZjEigrOyWTCKQsMBCnNNQr1kFWg9N0=s0-d-e1-ft#http://images.paypal.com/en_US/i/scr/pixel.gif"
+                            alt="" border="0"></td>
+    </tr>
+    <tr>
+        <td colspan="3"><img class="CToWUd"
+                             src="https://ci3.googleusercontent.com/proxy/rYUsleDJT242YjEISsbt9CCdCMfWwysEZTQwMlncayaefcC3-cRHbRc1zl9YkK8XsFexpny91POz0CVdkBRx-4yBHQMxR7AdY_nz20XQoTBJOhTypEkJyyFgN1obog=s0-d-e1-ft#http://images.paypal.com/en_US/i/scr/scr_emailBottomCorners_580wx13h.gif"
+                             alt="" height="13" border="0"></td>
+    </tr>
+    </tbody>
+</table>
+<table style="padding-top:20px;font:10px Verdana,Arial,Helvetica,sans-serif;color:#333" width="580" border="0"
+       cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td>
+            <div style="margin:5px 0;padding:0"><a
+                    href="http://sesim-portal16.rhcloud.com/se-sim/learning-portal/phished/${user}/${campaign}"
+                    target="_blank"
+                    data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.paypal.com/lk/cgi-bin/helpweb?cmd%3D_help&amp;source=gmail&amp;ust=1468744700253000&amp;usg=AFQjCNED9ybzi37l0onjUcBCndJAzZiNlA">Help</a><span
+                    style="color:#ccc"> | </span><a href="http://sesim-portal16.rhcloud.com/se-sim/learning-portal/phished/${user}/${campaign}" target="_blank"
+                                                    data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.paypal.com/lk/security&amp;source=gmail&amp;ust=1468744700253000&amp;usg=AFQjCNGNK9KY99znET9lCprBK8tIQB1zFw">Security
+                Center</a></div>
+            <p>Please do not reply to this email because we are not monitoring this inbox. To get in touch with us, log
+                in to your account and click "Contact Us" at the bottom of any page.</p>
+
+            <p>Copyright © 1999-2015 PayPal Inc. All rights reserved.</p>
+
+            <p>Consumer advisory: PayPal Pte Ltd, the Holder of the PayPal™ payment service stored value facility, does
+                not require the approval of the Monetary Authority of Singapore. Consumers (users) are advised to read
+                the <a href="http://sesim-portal16.rhcloud.com/se-sim/learning-portal/phished/${user}/${campaign}" target="_blank"
+                       data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.paypal.com/lk/sg/cgi-bin/webscr?cmd%3Dp/gen/ua/ua-outside&amp;source=gmail&amp;ust=1468744700253000&amp;usg=AFQjCNF_Oi-SyLgl5Iaq7ZuT60UKQr1E6g">terms
+                    and conditions</a> carefully.</p><img class="CToWUd"
+                                                          src="https://ci4.googleusercontent.com/proxy/OX9jytoThBMP9mZmRdV1CwUQYrhwpGRQddpfh_cBbhJLpy6RYW6s4LADnxYR6_YP6S9-5Z7ZJp0UaNnRoNiwVlf7CsENR8_RO7_kI_RG0IAXQwRtu-aGaNKxRLJbgXhvngiFHQL5kpO4vVCoaQ=s0-d-e1-ft#https://102.112.2O7.net/b/ss/paypalglobal/1/G.4--NS/123456?pageName=system_email_PP1263"
+                                                          alt="" height="1" width="1" border="0"><img class="CToWUd"
+                                                                                                      src="https://ci3.googleusercontent.com/proxy/PdHcVys0ix6kj30rJQUcHbuPamvVdfqMvtkkCWhuV06GD2VlokSZt3HUoXiNE_eoMn3f9GhssOS-oAz8uddJ69qYJT6_sp_3rENFi5N2Oeppu4L0_9001i4n8Oo09hIQhcdTiULgevJtDv2xQ8p-xzuCex9RUdroJgtvcOamjgQ3tI5xeE4aDVQwvrxefBjue6yFMiE__AQUD1f6hW3ZrqwE6R_J0sPuu2Z0YKognf0n5AgNTb7FzJ9xTQOs=s0-d-e1-ft#https://t.paypal.com/ts?ppid=PP1263&amp;cnac=LK&amp;rsta=en_US&amp;unptid=29bb4696-94d1-11e5-b948-441ea1475d84&amp;cust=4E8D9TSCDRJC6&amp;e=op&amp;mchn=em&amp;s=ci&amp;mail=sys&amp;page=main:email::::::"
+                                                                                                      alt="" height="1"
+                                                                                                      width="1"
+                                                                                                      border="0">
+
+            <p>PayPal Email ID PP1263 - 26835daf4dcb3</p></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

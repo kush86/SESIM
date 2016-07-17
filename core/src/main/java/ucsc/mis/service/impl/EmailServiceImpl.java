@@ -92,6 +92,7 @@ public class EmailServiceImpl implements EmailService {
                         model.put("user", user.getId());
                         model.put("email", user.getEmail());
                         model.put("campaign", campaign.getId());
+                        model.put("userName", user.getFirstName());
                         String text = VelocityEngineUtils.mergeTemplateIntoString(velocityEngine,
                                 campaign.getTemplate().getPath(), "UTF-8", model);
                         message.setText(text, true);

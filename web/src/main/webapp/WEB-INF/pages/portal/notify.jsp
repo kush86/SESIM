@@ -16,7 +16,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>Social Engineering Awareness Training</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<c:url value="/css/bootstrap.min.css" />" rel="stylesheet">
